@@ -1,0 +1,13 @@
+{
+  "name": "project-x1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:fe": "npm start --prefix zeroti-self-web",  
+    "start:be": "npm start --prefix zeroti-self-api", 
+    "start": "concurrently -n FE,BE \"npm run start:fe\" \"npm run start:be\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
